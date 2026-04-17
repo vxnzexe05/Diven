@@ -1,0 +1,127 @@
+{
+  "theme": {
+    "primary_mode": "light",
+    "archetype": "Swiss & High-Contrast (E-commerce variation)",
+    "description": "A crisp, professional, and minimalist e-commerce interface using strictly Navy Blue and White. Emphasizes product imagery with generous whitespace, progressive disclosure, and mobile-first functional bento grids.",
+    "emotion": "Trustworthy, clean, modern, appetizing"
+  },
+  "colors": {
+    "background": {
+      "default": "#ffffff",
+      "alt": "#f8fafc",
+      "glass": "rgba(255, 255, 255, 0.7)"
+    },
+    "primary": {
+      "main": "#0f172a",
+      "hover": "#1e293b",
+      "active": "#334155",
+      "foreground": "#ffffff"
+    },
+    "text": {
+      "primary": "#0f172a",
+      "secondary": "#475569",
+      "muted": "#94a3b8"
+    },
+    "border": {
+      "subtle": "#e2e8f0",
+      "strong": "#cbd5e1"
+    },
+    "status": {
+      "success": "#10b981",
+      "warning": "#f59e0b",
+      "error": "#ef4444"
+    }
+  },
+  "typography": {
+    "heading_font": "Outfit",
+    "body_font": "DM Sans",
+    "fallback_fonts": "sans-serif",
+    "sizes": {
+      "h1": "text-4xl sm:text-5xl tracking-tight font-bold",
+      "h2": "text-2xl sm:text-3xl tracking-tight font-semibold",
+      "h3": "text-xl sm:text-2xl tracking-tight font-medium",
+      "h4": "text-lg font-medium",
+      "body": "text-base leading-relaxed",
+      "small": "text-sm text-secondary",
+      "overline": "text-xs uppercase tracking-[0.2em] font-bold"
+    }
+  },
+  "spacing_and_layout": {
+    "general": "Generous spacing. Use p-8 or p-12 for section padding. Containers must have ample internal padding.",
+    "grids": {
+      "marketing": "Bento Grid strategy. grid-cols-1 md:grid-cols-2 lg:grid-cols-3 with gap-8 for product catalogs.",
+      "dashboard": "Strict grid hierarchy. Dashboard uses grid-cols-1 md:grid-cols-4 with gap-6."
+    },
+    "surfaces": {
+      "header": "Crystal Glassmorphism: backdrop-blur-xl bg-white/70, 1px border-b border-subtle.",
+      "cards": "Flat background (white), 1px solid border-subtle, no shadow by default. On hover: slight lift (-translate-y-1) and shadow-lg.",
+      "dashboard_cards": "Flat, minimalistic. p-6, rounded-xl."
+    }
+  },
+  "components": {
+    "buttons": "Primary buttons: bg-primary text-white rounded-none or rounded-md. Hover: bg-primary-hover. Must include clear focus states (ring-2 ring-offset-2 ring-primary).",
+    "inputs": "Shadcn UI customized: 1px border-subtle, focus:ring-1 focus:ring-primary. Clean, square or slightly rounded (rounded-md).",
+    "tables": "Minimalist table for admin: hidden vertical borders, subtle horizontal border-subtle, text-sm, distinct th styles (uppercase, text-xs).",
+    "navigation": "Sticky nav at the top. Logo on left, nav links center, cart on right. Visible on desktop.",
+    "cart": "Slide-out sheet or minimal modal for cart view. Clear breakdown of items (Piece vs Box).",
+    "icons": "Use lucide-react (e.g., ShoppingBag, User, LayoutDashboard, Package, Wallet, CheckCircle)."
+  },
+  "motion": {
+    "hover": "Subtle transform and color transitions: transition-all duration-300 ease-in-out.",
+    "entrance": "Staggered fade-in for product grids.",
+    "cart_add": "Micro-interaction: Button briefly changes to 'Added!' or shows checkmark, cart icon bounces subtly."
+  },
+  "image_urls": {
+    "hero_banner": {
+      "url": "https://images.unsplash.com/photo-1772651392135-b891a5e4f8a3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzN8MHwxfHNlYXJjaHwxfHxjb29raWVzJTIwYm94JTIwZmxhdCUyMGxheXxlbnwwfHx8fDE3NzYzMTE1NDh8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Flat lay of an elegant cookie box",
+      "category": "Hero Background or Product Showcase Split"
+    },
+    "chocolate_chips": {
+      "url": "https://images.unsplash.com/photo-1657418830273-40c19cfff4d7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwxfHxjaG9jb2xhdGUlMjBjaGlwJTIwY29va2llfGVufDB8fHx8MTc3NjMxMTUzN3ww&ixlib=rb-4.1.0&q=85",
+      "description": "Chocolate Chip Cookie",
+      "category": "Product Image"
+    },
+    "white_matcha": {
+      "url": "https://images.unsplash.com/photo-1706167754832-78f1fda7226c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzB8MHwxfHNlYXJjaHwxfHxwaXN0YWNoaW8lMjBjb29raWV8ZW58MHx8fHwxNzc2MzExNTc1fDA&ixlib=rb-4.1.0&q=85",
+      "description": "White Matcha Cookie",
+      "category": "Product Image"
+    },
+    "deep_choco": {
+      "url": "https://images.unsplash.com/photo-1673886089869-a9b1c71a8138?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1OTN8MHwxfHNlYXJjaHwxfHxkYXJrJTIwY2hvY29sYXRlJTIwY29va2llfGVufDB8fHx8MTc3NjMxMTUzN3ww&ixlib=rb-4.1.0&q=85",
+      "description": "Deep Choco Cookie",
+      "category": "Product Image"
+    },
+    "smores": {
+      "url": "https://images.unsplash.com/photo-1690976991784-517d7763e0fa?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NjV8MHwxfHNlYXJjaHwxfHxzbW9yZXMlMjBjb29raWV8ZW58MHx8fHwxNzc2MzExNTQ4fDA&ixlib=rb-4.1.0&q=85",
+      "description": "S'mores Cookie",
+      "category": "Product Image"
+    },
+    "monster_cookie": {
+      "url": "https://images.unsplash.com/photo-1633362218447-b80f27dc2ada?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjV8MHwxfHNlYXJjaHwxfHxtJTI2bSUyMGNvb2tpZXxlbnwwfHx8fDE3NzYzMTE1NDh8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Monster Cookie",
+      "category": "Product Image"
+    },
+    "cheesy_velvet": {
+      "url": "https://images.unsplash.com/photo-1673412810103-27c233f77da6?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDJ8MHwxfHNlYXJjaHwxfHxyZWQlMjB2ZWx2ZXQlMjBjb29raWV8ZW58MHx8fHwxNzc2MzExNTM3fDA&ixlib=rb-4.1.0&q=85",
+      "description": "Cheesy Velvet Cookie",
+      "category": "Product Image"
+    }
+  },
+  "accessibility": {
+    "contrast": "Ensure pure navy (#0f172a) on white (#ffffff) meets APCA standard. All text must be readable.",
+    "testing": "All interactive elements MUST have data-testid (e.g., data-testid='add-to-cart-button', data-testid='checkout-submit').",
+    "focus": "Clear focus rings on all inputs and buttons (ring-2 ring-primary)."
+  },
+  "instructions_to_main_agent": [
+    "Build the customer storefront and admin dashboard as two distinct routes or sections. Customer (/) and Admin (/admin).",
+    "Use strictly Navy Blue (slate-900) and White. Avoid default grays for buttons/active states; stick to the primary color palette.",
+    "Product cards must display the two pricing options clearly: Per Piece (₱45) and Box of 6 (₱260).",
+    "Use a ShoppingBag icon from lucide-react for the cart. The checkout form should collect Name, Phone, Address.",
+    "For the GCash payment display, use a clean Wallet or Smartphone icon from lucide-react alongside the number 09614841216. Do NOT use placeholder text or generic logo placeholders.",
+    "In the Admin Dashboard, implement a mock or simple context-based real-time inventory counter. The Sales Summary should calculate total orders, revenue, and best-selling flavor.",
+    "Use Shadcn UI for forms, tables, and dialogs, but customize the styling to remove default rounding if it conflicts with the minimalist square/slightly-rounded aesthetic.",
+    "DO NOT use Inter or Roboto for headings. Import and use Outfit (Google Fonts) for headings, and DM Sans for body.",
+    "Always use the provided image URLs in image_urls. Do NOT use placeholder services like via.placeholder.com."
+  ]
+}
